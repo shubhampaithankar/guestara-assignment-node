@@ -73,9 +73,9 @@ router.post('/:subCategoryId/items/create', async (req, res) => {
           ...req.body,
           categoryId: subcategory.categoryId,
           subCategoryId: subcategory.id,
-          // Set tax applicability and tax from the parent category
+          // Set taxNumber applicability and taxNumber from the parent category
           taxApplicability: subcategory.taxApplicability,
-          tax: subcategory.tax
+          taxNumber: subcategory.taxNumber
       })
 
       await item.save()

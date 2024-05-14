@@ -5,10 +5,10 @@ const itemSchema = new mongoose.Schema({
     image: { type: String, required: false },
     description: { type: String, required: true },
     taxApplicability: { type: Boolean, default: false },
-    tax: { type: Number, default: 0 },
+    taxNumber: { type: Number, default: 0 },
     baseAmount: { type: Number, default: 0, required: true },
     discount: { type: Number, default: 0, required: true },
-    categoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
+    categoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: false },
     subCategoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'SubCategory', required: false }
 })
 
