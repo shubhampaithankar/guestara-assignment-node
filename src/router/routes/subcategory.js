@@ -113,6 +113,4 @@ router.post('/edit/:subCategoryId', async (req, res) => {
   }
 })
 
-
-
 export default router

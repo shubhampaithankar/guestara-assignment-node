@@ -139,6 +139,8 @@
 		"name": "String",
 		"image": "String",
 		"description": "String",
+		"taxApplicability": "Boolean",
+		"taxNumber": "Number",
 		"baseAmount": "Number",
 		"discount": "Number"
 	}

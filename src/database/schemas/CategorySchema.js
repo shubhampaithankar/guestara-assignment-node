@@ -7,6 +7,6 @@ export default new mongoose.Schema({
     taxApplicability: { type: Boolean, default: false },
     taxNumber: { type: Number, required: false },
     taxType: { type: String, required: true },
-    subCategories: [{ type: mongoose.Schema.Types.ObjectId, ref: 'SubCategory', required: true }],
-    items: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Item', required: true }],
+    subCategories: [{ type: mongoose.Schema.Types.ObjectId, ref: 'SubCategory', required: false }],
+    items: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Item', required: false }],
 })
