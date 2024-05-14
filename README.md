@@ -28,13 +28,13 @@
 -  **POST**  `/create`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		taxType: String,
-		items: []
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"taxApplicability": "Boolean",
+		"taxNumber": "Number",
+		"taxType": "String",
+		"items": []
 	}
 ```
 
@@ -42,13 +42,10 @@
 -  **POST**  `/:categoryId/subcategories/create`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		taxType: String,
-		items: []
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"items": []
 	}
 ```
   
@@ -56,13 +53,11 @@
 -  **POST**  `/:categoryId/items/create`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		baseAmount: Number,
-		discount: Number
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"baseAmount": "Number",
+		"discount": "Number"
 	}
 ```
   
@@ -70,14 +65,14 @@
 -  **POST**  `/edit/:categoryId`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		taxType: String,
-		subCategories: [],
-		items: []
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"taxApplicability": "Boolean",
+		"taxNumber": "Number",
+		"taxType": "String",
+		"subCategories": [],
+		"items": []
 	}
 ```
   
@@ -96,13 +91,11 @@
 -  **POST**  `/:subCategoryId/items/create`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		baseAmount: Number,
-		discount: Number
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"baseAmount": "Number",
+		"discount": "Number"
 	}
 ```
   
@@ -110,13 +103,10 @@
 -  **POST**  `/edit/:subCategoryId`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		baseAmount: Number,
-		discount: Number
+		"name": "String",
+		"image": "String",
+		"description": "String",
+    "items": []
 	}
 ```
 
@@ -132,13 +122,13 @@
 -  **POST**  `/create`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		baseAmount: Number,
-		discount: Number
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"taxApplicability": "Boolean",
+		"taxNumber": "Number",
+		"baseAmount": "Number",
+		"discount": "Number"
 	}
 ```
 
@@ -146,13 +136,11 @@
 -  **POST**  `/edit/:id`
 ```JSON
 	{
-		name: String,
-		image: String,
-		description: String,
-		taxApplicability: Boolean,
-		taxNumber: Number,
-		baseAmount: Number,
-		discount: Number
+		"name": "String",
+		"image": "String",
+		"description": "String",
+		"baseAmount": "Number",
+		"discount": "Number"
 	}
 ```
 
