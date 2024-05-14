@@ -13,19 +13,19 @@
 ### `/api/category` Routes
 
 - *Get all categories*
--  **GET**  `/get-all` 
+  -  **GET**  `/get-all` 
 
 - *API to Get a category by name or ID along with its attributes*
--  **GET**  `/:identifier`
+  -  **GET**  `/:identifier`
 
 - *Get all subcategories under a category by categoryId*
--  **GET**  `/:categoryId/subcategories`
+  -  **GET**  `/:categoryId/subcategories`
 
 - *Get all items under a category*
--  **GET**  `/:categoryId/items`
+  -  **GET**  `/:categoryId/items`
 
 - *Create a category*
--  **POST**  `/create`
+  -  **POST**  `/create`
 ```JSON
 	{
 		"name": "String",
@@ -39,7 +39,7 @@
 ```
 
 - *Create a subcategory under a category*
--  **POST**  `/:categoryId/subcategories/create`
+  -  **POST**  `/:categoryId/subcategories/create`
 ```JSON
 	{
 		"name": "String",
@@ -50,7 +50,7 @@
 ```
   
 - *Create an item under a category*
--  **POST**  `/:categoryId/items/create`
+  -  **POST**  `/:categoryId/items/create`
 ```JSON
 	{
 		"name": "String",
@@ -62,7 +62,7 @@
 ```
   
 - *Edit a category*
--  **POST**  `/edit/:categoryId`
+  -  **POST**  `/edit/:categoryId`
 ```JSON
 	{
 		"name": "String",
@@ -79,16 +79,16 @@
 ### `/api/subcategory` Routes
 
 - *Get all subcategories*
--  **GET**  `/get-all`
+  -  **GET**  `/get-all`
   
 - *Get a subcategory by name or ID along with its attributes*
--  **GET**  `/:identifier`
+  -  **GET**  `/:identifier`
 
 - *Get all items under a sub-category*
--  **GET**  `/:subCategoryId/items`
+  -  **GET**  `/:subCategoryId/items`
 
 - *Create an item under a subcategory*
--  **POST**  `/:subCategoryId/items/create`
+  -  **POST**  `/:subCategoryId/items/create`
 ```JSON
 	{
 		"name": "String",
@@ -100,7 +100,7 @@
 ```
   
 - *Edit a subcategory attributes by ID*
--  **POST**  `/edit/:subCategoryId`
+  -  **POST**  `/edit/:subCategoryId`
 ```JSON
 	{
 		"name": "String",
@@ -113,13 +113,13 @@
 ### `/api/item/` Routes
 
 - *Get all items*
--  **GET**  `/get-all`
+  -  **GET**  `/get-all`
 
 - *Get an item by name or ID along with its attributes*
--  **GET**  `/:identifier`
+  -  **GET**  `/:identifier`
 
 - *Create an item*
--  **POST**  `/create`
+  -  **POST**  `/create`
 ```JSON
 	{
 		"name": "String",
@@ -133,7 +133,7 @@
 ```
 
 - *Edit item attributes by ID*
--  **POST**  `/edit/:id`
+  -  **POST**  `/edit/:id`
 ```JSON
 	{
 		"name": "String",
@@ -145,21 +145,21 @@
 ```
 
 - *Search for items by their name*
--  **GET**  `/search/:itemName`
+  -  **GET**  `/search/:itemName`
 
 ## Short Answers
 
 1.  **Which database did you choose and why?**
-I have used MongoDB Database for this project because I have a lot more control over it for a small assignment like this
+  - I have used MongoDB Database for this project because I have a lot more control over it for a small assignment like this
 
 2.  **3 things you learned from this assignment:**
-- Linking Schemas together by using the `ref` property in the schemas
-- Using the `populate` function provided by mongoose. It is a convenient method to get all the data needed by just having the `_id`
-- Writing better code and not using redundant methods
+  - Linking Schemas together by using the `ref` property in the schemas
+  - Using the `populate` function provided by mongoose. It is a convenient method to get all the data needed by just having the `_id`
+  - Writing better code and not using redundant methods
 
 3.  **What was the most difficult part of the assignment?**
-- It was my first time using Vite to create applications so it was hard to get a grasp of its CLI and the library
+  - It was my first time using Vite to create applications so it was hard to get a grasp of its CLI and the library
 
 4.  **What would you have done differently given more time?**
-- Optimize the queries for better performance and fast calls
-- Create a simple frontend app to demonstrate the queries in real-world example
+  - Optimize the queries for better performance and fast calls
+  - Create a simple frontend app to demonstrate the queries in real-world example
