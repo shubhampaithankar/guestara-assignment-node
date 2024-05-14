@@ -4,9 +4,9 @@
 
 - Clone this repository: `git clone`
 - Run `npm install`
-- Create a `.env` file in the root directory and add your MongoDB connection URL as `MONGO_URI`
+- Create a `.env` file in the root directory and add your MongoDB connection URL as `MONGO_URI` and port for app as `PORT`
 - Use `npm run dev` for development purposes
-- Use `npm run build` for building
+- Go to **http://localhost:**`your-port` to test the application
 
 ## Usage
 

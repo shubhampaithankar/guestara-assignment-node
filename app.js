@@ -26,7 +26,7 @@ try {
 
   app.use('/api', router)
 
-  const port = 3001
+  const port = process.env.PORT || 3001
   ViteExpress.listen(app, port, () =>console.log(`Server is listening on port http://localhost:${port}`))
   
 } catch (error) {
